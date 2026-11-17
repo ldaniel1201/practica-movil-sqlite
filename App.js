@@ -43,7 +43,7 @@ export default function App() {
   if (cargando) {
     return (
       <SafeAreaView style={styles.center}>
-        <ActivityIndicator size="large" color="#2563EB" />
+        <ActivityIndicator size="large" color="#7C3AED" />
         <Text style={styles.loadingText}>Cargando base de datos SQLite...</Text>
       </SafeAreaView>
     );
@@ -52,7 +52,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.phoneFrame}>
-        <Text style={styles.titulo}>Mis Tareas</Text>
+        <Text style={styles.titulo}>Tareas de Luis Daniel</Text>
         <Text style={styles.subtitulo}>SQLite v{version} · {tareas.length} tarea(s)</Text>
 
         <View style={styles.inputRow}>
@@ -101,13 +101,13 @@ const styles = StyleSheet.create({
   subtitulo: { fontSize: 13, color: "#64748B", marginBottom: 16 },
   inputRow: { flexDirection: "row", marginBottom: 16 },
   input: { flex: 1, borderWidth: 1, borderColor: "#CBD5E1", borderRadius: 10, paddingHorizontal: 12, paddingVertical: 10, marginRight: 8, backgroundColor: "#FFFFFF" },
-  boton: { backgroundColor: "#2563EB", borderRadius: 10, paddingHorizontal: 16, justifyContent: "center" },
+  boton: { backgroundColor: "#7C3AED", borderRadius: 10, paddingHorizontal: 16, justifyContent: "center" },
   botonTexto: { color: "#FFFFFF", fontWeight: "600" },
   vacio: { textAlign: "center", color: "#94A3B8", marginTop: 24 },
   tareaRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: "#E2E8F0" },
   checkArea: { flexDirection: "row", alignItems: "center", flex: 1 },
   checkbox: { width: 20, height: 20, borderRadius: 5, borderWidth: 2, borderColor: "#94A3B8", marginRight: 10 },
-  checkboxOn: { backgroundColor: "#2563EB", borderColor: "#2563EB" },
+  checkboxOn: { backgroundColor: "#7C3AED", borderColor: "#2563EB" },
   tareaTexto: { fontSize: 15, color: "#1E293B", flexShrink: 1 },
   tareaTextoHecha: { textDecorationLine: "line-through", color: "#94A3B8" },
   eliminar: { color: "#DC2626", fontSize: 13, fontWeight: "600", marginLeft: 12 },
